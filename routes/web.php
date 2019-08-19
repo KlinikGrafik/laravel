@@ -11,6 +11,31 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'PagesController@index'); 
+Route::get('/about', 'PagesController@about'); 
+Route::get('/service', 'PagesController@service'); 
+
+
+
+/*Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', 'PagesController@index'); 
+
+Route::get('/about', function () {
+    return view('pages.about');
+});
+   
+Route::get('/asri', function () {
+    return view('pages.asri');
+});
+
+//dynamic route
+Route::get('/users/{id}', function ($id) {
+        return 'this is user' .$id;
+    
+    });
+Route::get('/service', function () {
+            return view('pages.service');
+});*/
